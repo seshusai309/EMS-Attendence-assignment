@@ -3,26 +3,10 @@
 
 A backend-focused Employee Management System that enforces Wi-Fi-based attendance tracking. Employees can only check-in/check-out when connected to the office network, validated through backend middleware.
 
-## Tech Stack
-
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Authentication:** JWT (JSON Web Tokens)
-- **Authorization:** Role-based (Employee, HR)
-
-## Key Features
-
-- Wi-Fi-based attendance validation via backend middleware
-- JWT authentication with role-based access control
-- Employees can check-in/check-out only from office Wi-Fi
-- HR dashboard showing live attendance status
-- Employees without check-in are marked as `NOT_MARKED`
-- RESTful API design
-
+----------------------------------------------
 ## Environment Variables
 
 Create a `.env` file in the root directory:
-
 ```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
