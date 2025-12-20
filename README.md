@@ -29,12 +29,21 @@ The server will start on `http://localhost:5000`
 
 ## API Endpoints
 
-- `POST /api/auth/register` - Register user
-- `POST /api/auth/login` - Login user
-- `POST /api/attendance/checkin` - Check-in (Wi-Fi validated)
-- `POST /api/attendance/checkout` - Check-out (Wi-Fi validated)
-- `GET /api/attendance/live` - Live attendance (HR only)
+### Auth
+- POST /api/auth/register
+- POST /api/auth/login
 
+### Attendance (Employee)
+- POST /api/attendance/check-in
+- POST /api/attendance/check-out
+- GET /api/attendance/my-status
+
+### Attendance (HR)
+- GET /api/attendance/live
+- GET /api/attendance/summary
+
+### Wi-Fi
+- GET /api/attendance/check-wifi
 ## Assignment Note
 
 This project prioritizes **backend logic and architecture** over UI design. The frontend is minimal and serves only to demonstrate API functionality. Focus areas include middleware design, authentication flow, role-based authorization, and Wi-Fi validation logic.
