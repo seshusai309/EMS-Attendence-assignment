@@ -15,7 +15,7 @@ OFFICE_WIFI_IP=your_office_ip_or_subnet
 NODE_ENV=development
 ```
 
-## Installation & Setup
+## Installation & Setup same commands for both frontend and backend
 
 ```bash
 # Install dependencies
